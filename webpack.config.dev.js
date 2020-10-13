@@ -72,14 +72,14 @@ module.exports = {
         cert: './localhost.crt',
         key: './localhost.key',
         host: '0.0.0.0',
-        port: 9999,
+        port: 3000,
         hot: true,
         overlay: true,
         historyApiFallback: false,
         watchContentBase: true,
         disableHostCheck: true,
         headers: {
-            'Access-Control-Allow-Origin': https ? 'https://0.0.0.0:9999' : 'http://0.0.0.0:9999'
+            'Access-Control-Allow-Origin': https ? 'https://0.0.0.0:3000' : 'http://0.0.0.0:3000'
         }
     },
     mode: 'development',
