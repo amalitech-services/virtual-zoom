@@ -9,9 +9,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack --config=webpack.config.js",
-    "https": "webpack --config=webpack.config.js",
-    "build": "webpack --config=webpack.config.js"
+    "start": "set NODE_ENV=development && set BABEL_ENV=development && webpack-dev-server --config webpack.config.dev.js --https false ",
+    "https": "set NODE_ENV=development && set BABEL_ENV=development && webpack-dev-server --config webpack.config.dev.js --https true "
   },
   "keywords": [
     "zoom",
