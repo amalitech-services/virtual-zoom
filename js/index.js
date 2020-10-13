@@ -40,6 +40,7 @@ $( document ).ready( function(e) {
   const urlParams = new URLSearchParams(params)
   meetingConfig.mn = urlParams.get('meetingNumber')
   meetingConfig.nm = urlParams.get('name')
+  meetingConfig.userName = urlParams.get('name')
   meetingConfig.role = 0
   meetingConfig.pwd = urlParams.get('password')
   meetingConfig.leaveUrl = urlParams.get('leaveUrl')
