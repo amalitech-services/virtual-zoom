@@ -8,7 +8,6 @@ module.exports = {
     watchOptions: {
         ignored: /node_modules/
     },
-    devtool: 'eval',
     entry: {
         index: [
             './js/index.js'
@@ -67,27 +66,12 @@ module.exports = {
     },
     context: __dirname,
     target: 'web',
-    devServer: {
-        https,
-        cert: './localhost.crt',
-        key: './localhost.key',
-        host: '0.0.0.0',
-        port: 9999,
-        hot: true,
-        overlay: true,
-        historyApiFallback: false,
-        watchContentBase: true,
-        disableHostCheck: true,
-        headers: {
-            'Access-Control-Allow-Origin': https ? 'https://0.0.0.0:9999' : 'http://0.0.0.0:9999'
-        }
-    },
-    mode: 'development',
-    plugins: [
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.DefinePlugin({
-            'process.env.NODE_ENV': JSON.stringify('development'),
-            'process.env.BABEL_ENV': JSON.stringify('development'),
-        })
-    ],
+    mode: 'production',
+    // plugins: [
+    //     new webpack.HotModuleReplacementPlugin(),
+    //     new webpack.DefinePlugin({
+    //         'process.env.NODE_ENV': JSON.stringify('production'),
+    //         'process.env.BABEL_ENV': JSON.stringify('production'),
+    //     })
+    // ],
 };

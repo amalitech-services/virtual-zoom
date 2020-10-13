@@ -16,8 +16,21 @@
 runtime: nodejs  
 env: flex
 
-beta_settings:
-    cloud_sql_instances: virtual-platform-back:us-central1:postgresuser
+handlers:
+    - url: /
+      static_files: www/index.html
+      upload: www/index.html
+
+    - url: /(.*)
+      static_files: www/\1
+      upload: www/(.*)
+
+# readiness_check:
+#     check_interval_sec: 120
+#     timeout_sec: 40
+#     failure_threshold: 5
+#     success_threshold: 5
+#     app_start_timeout_sec: 3000
 
 
 # [END app_yaml]

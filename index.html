@@ -3,8 +3,8 @@
 <head>
     <title>AHK Virtual</title>
     <meta charset="utf-8" />
-    <link type="text/css" rel="stylesheet" href="assets/@zoomus/websdk/dist/css/bootstrap.css" />
-    <link type="text/css" rel="stylesheet" href="assets/@zoomus/websdk/dist/css/react-select.css" />
+    <link type="text/css" rel="stylesheet" href="node_modules/@zoomus/websdk/dist/css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="node_modules/@zoomus/websdk/dist/css/react-select.css" />
 
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -53,10 +53,10 @@
         }
     </style>
 
-    <nav id="nav-tool" class="navbar navbar-inverse navbar-fixed-top" >
+    <nav id="nav-tool" class="navbar navbar-inverse navbar-fixed-top" dsiplay="none">
         <div class="container">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Zoom WebSDK</a>
+                <a class="navbar-brand" href="#">AHK</a>
             </div>
             <div id="navbar" class="websdktest">
                 <form class="navbar-form navbar-right" id="meeting_form">
@@ -132,15 +132,15 @@
             }
         })
     </script>
-    <script src="assets/react/umd/react.production.min.js"></script>
-    <script src="assets/react-dom/umd/react-dom.production.min.js"></script>
-    <script src="assets/redux/dist/redux.min.js"></script>
-    <script src="assets/redux-thunk/dist/redux-thunk.min.js"></script>
-    <script src="assets/lodash/lodash.min.js"></script>
-    <script src="assets/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/react/umd/react.production.min.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.production.min.js"></script>
+    <script src="node_modules/redux/dist/redux.min.js"></script>
+    <script src="node_modules/redux-thunk/dist/redux-thunk.min.js"></script>
+    <script src="node_modules/lodash/lodash.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
 
-    <script src="js/tool.js"></script>
-    <script type="module" src="js/index.js"></script>
+    <script src="./js/tool.js"></script>
+    <script src="./static/index.min.js"></script>
 
 </body>
 
