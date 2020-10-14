@@ -47,7 +47,7 @@ $( document ).ready( function(e) {
 
   console.log(meetingConfig)
   if (!meetingConfig.mn || !meetingConfig.name) {
-    alert("Meeting number or username is empty");
+
     return false;
   }
   testTool.setCookie("meeting_number", meetingConfig.mn);
@@ -74,7 +74,6 @@ $( document ).ready( function(e) {
 window.copyJoinLink = function (element) {
   const meetingConfig = testTool.getMeetingConfig()
   if (!meetingConfig.mn || !meetingConfig.name) {
-    alert("Meeting number or username is empty");
     return false;
   }
   const signature = ZoomMtg.generateSignature({

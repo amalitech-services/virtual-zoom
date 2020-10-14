@@ -7,7 +7,7 @@ const meetingConfig = {
   meetingNumber: tmpArgs.mn,
   userName: tmpArgs.nm || 'Particpant',
   passWord: tmpArgs.pwd,
-  leaveUrl: "/index.html",
+  leaveUrl: "/leave.html",
   role: parseInt(tmpArgs.role, 10),
   userEmail: (function () {
     try {
