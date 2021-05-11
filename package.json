@@ -19,7 +19,7 @@
   "dependencies": {
     "@zoomus/websdk": "^1.8.1",
     "jquery": "^3.4.1",
-    "lodash": "^4.17.14",
+    "lodash": "^4.17.21",
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-redux": "7.1.0",
